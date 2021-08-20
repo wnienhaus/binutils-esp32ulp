@@ -983,7 +983,7 @@ expr_1: expr_1 STAR expr_1
 	}
 	| expr_1 CARET expr_1
 	{
-	$$ = binary (Expr_Op_Type_LOR, $1, $3);
+	$$ = binary (Expr_Op_Type_BXOR, $1, $3);
 	}
 	| expr_1 BAR expr_1
 	{
