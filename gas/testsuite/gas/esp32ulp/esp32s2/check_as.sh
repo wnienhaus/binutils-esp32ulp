@@ -27,3 +27,4 @@ ${AS} -al ${AS_PATH}/esp32s2ulp_wakehalt.s > ${AS_PATH}/compare/esp32s2ulp_wakeh
 ${AS} -al ${AS_PATH}/esp32s2ulp_tsens.s > ${AS_PATH}/compare/esp32s2ulp_tsens.lst --mcpu=esp32s2
 ${AS} -al ${AS_PATH}/esp32s2ulp_sleep.s > ${AS_PATH}/compare/esp32s2ulp_sleep.lst --mcpu=esp32s2
 ${AS} -al ${AS_PATH}/esp32s2ulp_ld.s > ${AS_PATH}/compare/esp32s2ulp_ld.lst --mcpu=esp32s2
+${AS} -al ${AS_PATH}/test_expr.s > ${AS_PATH}/compare/test_expr.lst --mcpu=esp32s2

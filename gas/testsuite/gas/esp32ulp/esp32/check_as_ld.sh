@@ -39,6 +39,9 @@ ${LD} -o  ${AS_PATH}/compare/test_jumpr.bin -A elf32-esp32ulp ${AS_PATH}/test_ju
 ${AS} -al ${AS_PATH}/test_reg.s -o ${AS_PATH}/test_reg.elf --mcpu=esp32
 ${LD} -o  ${AS_PATH}/compare/test_reg.bin -A elf32-esp32ulp ${AS_PATH}/test_reg.elf
 
+${AS} -al ${AS_PATH}/test_expr.s -o ${AS_PATH}/test_expr.elf --mcpu=esp32
+${LD} -o  ${AS_PATH}/compare/test_expr.bin -A elf32-esp32ulp ${AS_PATH}/test_expr.elf
+
 ${AS} -al ${AS_PATH}/test1.s -o ${AS_PATH}/test1.elf --mcpu=esp32
 ${LD} -o  ${AS_PATH}/compare/test1.bin -A elf32-esp32ulp ${AS_PATH}/test1.elf
 

@@ -52,3 +52,6 @@ ${LD} -o ${AS_PATH}/compare/esp32s2ulp_sleep.bin -A elf32-esp32ulp ${AS_PATH}/es
 
 ${AS} -al ${AS_PATH}/esp32s2ulp_ld.s -o ${AS_PATH}/esp32s2ulp_ld.elf --mcpu=esp32s2
 ${LD} -o ${AS_PATH}/compare/esp32s2ulp_ld.bin -A elf32-esp32ulp ${AS_PATH}/esp32s2ulp_ld.elf
+
+${AS} -al ${AS_PATH}/test_expr.s -o ${AS_PATH}/test_expr.elf --mcpu=esp32s2
+${LD} -o ${AS_PATH}/compare/test_expr.bin -A elf32-esp32ulp ${AS_PATH}/test_expr.elf

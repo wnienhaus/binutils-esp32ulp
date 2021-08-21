@@ -28,6 +28,8 @@ ${AS} -al ${AS_PATH}/test_jumpr.s > ${AS_PATH}/compare/test_jumpr.lst --mcpu=esp
 echo "test_jumpr done ..."
 ${AS} -al ${AS_PATH}/test_reg.s > ${AS_PATH}/compare/test_reg.lst --mcpu=esp32
 echo "test_reg done ..."
+${AS} -al ${AS_PATH}/test_expr.s > ${AS_PATH}/compare/test_expr.lst --mcpu=esp32
+echo "test_expr done ..."
 ${AS} -al ${AS_PATH}/test1.s > ${AS_PATH}/compare/test1.lst --mcpu=esp32
 echo "test1 done ..."
 ${AS} -al ${AS_PATH}/test_macro.s > ${AS_PATH}/compare/test_macro.lst --mcpu=esp32
